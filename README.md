@@ -1,3 +1,3 @@
 # jogeter.github.io
 
-This is a learnign site for Jogeter.
+This is a learning site for Jogeter.
