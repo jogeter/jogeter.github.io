@@ -11,22 +11,36 @@
 <!-- Add our model here -->
 
 	<a-entity 
-	position="0 0.5 0"
+	position="0.5 -2 0.5"
 	scale="0.10 0.10 0.10"
 	obj-model="obj: url(models/Corona.obj);">
 	</a-entity>
 
 <!-- Animated circle lights -->
-	<a-sphere position="0.5 1.5 -0.5" color="white" radius="0.15">
+	<a-sphere position="0.5 1.5 -0.5" color="green" radius="0.3">
 		<a-animation 
 			attribute="color"
 			dur="10000"
-			from="white"
-			to="red"
-			repeat="indefinite">
-		</a-animation>
+			from="green"
+			to="white"
+			repeat="indefinite"></a-animation>
 	</a-sphere>
-	
+	<a-sphere position="2.0 0 -0.5" color="blue" radius="0.2">
+		<a-animation 
+			attribute="color"
+			dur="10000"
+			from="blue"
+			to="white"
+			repeat="indefinite"></a-animation>
+	</a-sphere>	
+	<a-sphere position="-0.5 0 -0.5" color="red" radius="0.15">
+		<a-animation 
+			attribute="color"
+			dur="10000"
+			from="red"
+			to="white"
+			repeat="indefinite"></a-animation>
+	</a-sphere>	
 
 <!-- Create card info box here  -->
 
