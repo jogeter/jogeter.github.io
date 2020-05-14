@@ -10,13 +10,20 @@
 
 <!-- Add our model here -->
 
-	<a-entity 
-	position="0 0.5 0"
-	scale="0.10 0.10 0.10"
-	obj-model="obj: url(models/Corona.obj); mtl: URL(models/Corona.mtl)">
-	</a-entity>
 
-<!-- Animiated circle lights -->
+    	<a-assets>
+           <a-asset-item id="corona-obj" src="models/Corona.obj"></a-asset-item>
+           <a-asset-item id="corona-mtl" src="models/corona.obj.mtl"></a-asset-item>
+     	</a-assets>
+     	<a-entity
+          obj-model="obj: #corona-obj; mtl: #corona-mtl"
+          scale="1 1 1"
+          rotation="0 0 0"
+          position="1 1 1">
+		</a-entity>
+ 	
+	
+<!-- Animated circle lights -->
 
 <!-- Create card info box here  -->
 
