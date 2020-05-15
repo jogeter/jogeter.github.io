@@ -27,11 +27,6 @@
 	gltf-model="url(models/Corona.glb)">
 	</a-entity>
 
-	 <a-video autoplay loop="true" 
-	 position="0 0 0.5" src="models/videoplayback.mp4"
-	 rotation="310 0 0">
-	 </a-video>
-
 <!-- Create animated sphere box here  -->
 	<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
 		<a-sphere radius="0.2" position="-3 2 4" color="green"></a-sphere>
@@ -44,7 +39,12 @@
 	</a-entity>
 
 <!-- Create card info box here  -->
-	<a-plane src="models/BotellaText.jpg" height="3" width="3" color="white" position="0.5 -1.8 2.5" rotation="270 0 0"></a-plane>
+<!-- <a-plane src="models/BotellaText.jpg" height="3" width="3" color="white" position="0.5 -1.8 2.5" rotation="270 0 0"></a-plane> -->
+	
+	<a-video autoplay loop="true" height="2.5" width="3"
+	position="0.5 -1.8 2.5" src="models/videoplayback.mp4"
+	rotation="270 0 0">
+	</a-video>
 	
 	<a-text value="\n\n\n\n\nHave a beer and chill!!!!" height="8" width="4" color="white"  position="-1 6 3" rotation="310 0 0"></a-text>
 	
