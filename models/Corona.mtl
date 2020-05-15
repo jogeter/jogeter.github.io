@@ -12,5 +12,5 @@ newmtl 01___Default
 	Kd 0.5882 0.5882 0.5882
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka models\BotellaText.jpg
-	map_Kd models\BotellaText.jpg
+	map_Ka models/BotellaText.jpg
+	map_Kd models/BotellaText.jpg
