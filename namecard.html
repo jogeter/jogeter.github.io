@@ -8,18 +8,18 @@
 <a-scene embedded arjs ='trackingMethod: best;'>
 <a-anchor hit-testing-enabled='true'>
 	
-
+	<a-scene>
 	  <a-assets>
 	    <a-asset-item id="Corona-obj" src="models/Corona.obj"></a-asset-item>
-	    <a-asset-item id="Corona-mtl" src="models/Corona.mtl"></a-asset-item>
+	  <!--  <a-asset-item id="Corona-mtl" src="models/Corona.mtl"></a-asset-item> -->
 	  </a-assets>
 	<a-entity 
 		position="-2 -3 1.7"
 		rotation="270 270 360"
 		scale="0.10 0.10 0.10"
-		obj-model="obj: #Corona-obj; mtl: #Corona-mtl">
+		obj-model="obj: #Corona-obj;">
 	</a-entity>
-
+	</a-scene>
 
 <!-- Add our model here
 	<a-entity 
