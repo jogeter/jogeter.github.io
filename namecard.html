@@ -7,6 +7,7 @@
   
 <a-scene embedded arjs ='trackingMethod: best;'>
 <a-anchor hit-testing-enabled='true'>
+	<a-marker preset='hiro'>
 <!-- Add our model here -->
 	<a-entity
 	position="-2 -3.5 5"
@@ -53,7 +54,11 @@
 
 	
 </a-anchor>
-	<a-marker-camera preset='kanji'><a-marker-camera>
+	
+  <!-- here define the content to display on top of the marker -->
+  	
+	</a-marker>
+	<a-entity camera></a-entity>
 </a-scene>
 
 <!--   
