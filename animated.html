@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+
+  
+  <body style="margin : 0px; overflow: hidden;">
+	
+<a-scene>
+	<a-entity light="type: ambient; intensity: 0.5;"></a-entity>
+	<a-entity light="type: directional;
+					 castShadow: true;
+					 intensity: 0.4;
+					 shadowCameraVisible: true;"
+            position="-5 12 -30.5"></a-entity>
+	
+	<a-sphere id="3" position="0 2.5 -3"   radius="0.1" color="green" shadow="cast: true"></a-sphere>
+	
+	<a-sphere id="4" position="1 3 -5"    radius="0.1" color="red"   shadow="cast: true"></a-sphere>
+	
+	<a-box id="1"    position="1 2.5 -6"  depth="0.5" height="0.5" width="0.5" color="blue" shadow="cast: true"></a-box>		
+	
+	<a-box id="2"    position="-4.5 0.5 -8" depth="1" height="1" width="1" color="red" shadow="cast: true"></a-box>
+
+	<a-circle id="ground" position="0 0 0" radius="20" rotation="-90 0 0" color="grey" shadow="receive: true"></a-circle>
+		
+	<a-entity 
+	shadow="cast: true"
+	position="-1 0 -5"
+	rotation="270 0 0"
+	scale="0.10 0.10 0.10"
+	gltf-model="url(https://jogeter.github.io/models/Corona.glb)">
+	</a-entity>
+	
+	<a-entity 
+	animation-mixer
+	shadow="cast: true"
+	position="3 0 -5"
+	rotation="0 180 0"
+	scale="1 1 1"
+	gltf-model="url(https://jogeter.github.io/models/spiderman.glb)">
+	</a-entity>
+	
+	<a-entity
+	animation-mixer
+	shadow="cast: true"
+	position="2 0 -6.5"
+	rotation="0 0 0"
+	scale="0.2 0.2 0.2"
+	gltf-model="url(https://jogeter.github.io/models/sherie.glb)">
+	</a-entity>
+
+	
+	
+</a-scene>
+
+	
+  </body>
+  
+</html>
