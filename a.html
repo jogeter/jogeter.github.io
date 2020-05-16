@@ -18,6 +18,15 @@
       <a-sky color="#ECECEC"></a-sky> -->
       </a-marker>
     </a-scene>
-    <a-entity camera></a-entity>
+    <a-entity camera="far:10000">
+    </a-entity>
   </body>
 </html>
+<!-- 
+active	Whether the camera is the active camera in a scene with more than one camera.	true
+far	Camera frustum far clipping plane.	10000
+fov	Field of view (in degrees).	80
+near	Camera frustum near clipping plane.	0.005
+spectator	Whether the camera is used to render a third-person view of the scene on the 2D display while in VR mode.	false
+zoom	Zoom factor of the camera.	1 
+-->
